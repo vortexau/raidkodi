@@ -98,21 +98,3 @@ raid = RaidKodi()
 raid.setHost('192.168.1.254')
 raid.run()
 
-"""
-host = '192.168.1.4'
-
-def create_ssh(host=host, username=username, password=password):
-    ssh = paramiko.SSHClient()
-    ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy()) 
-    try:
-       print "creating connection"
-       ssh.connect(host, username=username, password=password)
-       print "connected"
-       yield ssh
-    finally:
-       print "closing connection"
-       ssh.close()
-       print "closed"
-
-create_ssh(host, username, password)
-"""
